@@ -4,8 +4,9 @@ import Welcome from "./welcome";
 import Login from "./login";
 import Register from "./register";
 import HomePage from "./(tabs)/homePage"; 
+import AdminPage from "./(tabs)/AdminPage";
 export default function index() {
-  return <HomePage />;
+  return <AdminPage />;
 }
 
 const styles = StyleSheet.create({
