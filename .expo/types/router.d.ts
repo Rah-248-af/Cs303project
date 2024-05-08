@@ -9,9 +9,9 @@ declare module "expo-router" {
   // prettier-ignore
   type StaticRoutes = `/` | `/(tabs)/addItem` | `/addItem` | `/(tabs)/AdminPage` | `/AdminPage` | `/(tabs)/deleteItem` | `/deleteItem` | `/(tabs)/homePage` | `/homePage` | `/(tabs)/Orders` | `/Orders` | `/(tabs)/profile` | `/profile` | `/home` | `/login` | `/register` | `/welcome`;
   // prettier-ignore
-  type DynamicRoutes<T extends string> = never;
+  type DynamicRoutes<T extends string> = `/category/${SingleRoutePart<T>}` | `/products/${SingleRoutePart<T>}`;
   // prettier-ignore
-  type DynamicRouteTemplate = never;
+  type DynamicRouteTemplate = `/category/[name]` | `/products/[id]`;
 
   type RelativePathString = `./${string}` | `../${string}` | '..';
   type AbsoluteRoute = DynamicRouteTemplate | StaticRoutes;

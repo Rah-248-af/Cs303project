@@ -6,7 +6,7 @@ import Register from "./register";
 import HomePage from "./(tabs)/homePage"; 
 import AdminPage from "./(tabs)/AdminPage";
 export default function index() {
-  return <HomePage />;
+  return <Register />;
 }
 
 const styles = StyleSheet.create({
