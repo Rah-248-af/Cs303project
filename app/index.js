@@ -3,9 +3,9 @@ import React from "react";
 import Welcome from "./welcome";
 import Login from "./login";
 import Register from "./register";
-
+import HomePage from "./(tabs)/homePage"; 
 export default function index() {
-  return <Login />;
+  return <HomePage />;
 }
 
 const styles = StyleSheet.create({
