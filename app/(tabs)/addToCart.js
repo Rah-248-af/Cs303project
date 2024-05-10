@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, SafeAreaView, FlatList, TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet, SafeAreaView, FlatList, TouchableOpacity, Image,ScrollView } from "react-native";
 import { collection, getDocs, doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import Colors from "../../constants/Colors";
