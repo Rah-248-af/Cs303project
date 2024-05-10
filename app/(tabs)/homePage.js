@@ -19,7 +19,7 @@ import Profile from "../../assets/Profile.png";
 import Carousel from "react-native-snap-carousel";
 import { router } from "expo-router";
 import ProductsDisplayer from "../../components/ProductsDisplayer";
-
+import { Route } from "expo-router/build/Route";
 export default function HomePage() {
   const [categories, setCategories] = useState([]);
   const [banner, setBanner] = useState([]);
@@ -128,7 +128,7 @@ export default function HomePage() {
                 )}
                 sliderWidth={screenWidth}
                 itemWidth={300}
-                loop={true}
+                loop={false}
                 autoplay={true}
                 autoplayInterval={10000}
               />
@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: Colors.dark.backgroundcolor,
+    backgroundColor: Colors.light.backgroundcolor,
   },
   bannerImage: {
     width: "100%",
