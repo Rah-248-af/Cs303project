@@ -57,9 +57,11 @@ const Cart = () => {
   if (loading) {
     return (
       <SafeAreaView style={styles.container}>
+      <ScrollView>
         <View style={styles.loadingContainer}>
           <Text>Loading...</Text>
         </View>
+      </ScrollView>
       </SafeAreaView>
     );
   }
