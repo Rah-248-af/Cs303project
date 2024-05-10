@@ -7,11 +7,11 @@ declare module "expo-router" {
   export * from 'expo-router/build';
 
   // prettier-ignore
-  type StaticRoutes = `/` | `/(tabs)/addItem` | `/addItem` | `/(tabs)/AdminPage` | `/AdminPage` | `/(tabs)/deleteItem` | `/deleteItem` | `/(tabs)/homePage` | `/homePage` | `/(tabs)/Orders` | `/Orders` | `/(tabs)/profile` | `/profile` | `/home` | `/login` | `/register` | `/welcome`;
+  type StaticRoutes = `/` | `/(tabs)/addItem` | `/addItem` | `/(tabs)/addToCart` | `/addToCart` | `/(tabs)/AdminPage` | `/AdminPage` | `/(tabs)/deleteItem` | `/deleteItem` | `/(tabs)/homePage` | `/homePage` | `/(tabs)/Orders` | `/Orders` | `/(tabs)/profile` | `/profile` | `/home` | `/login` | `/register` | `/welcome`;
   // prettier-ignore
-  type DynamicRoutes<T extends string> = `/category/${SingleRoutePart<T>}` | `/products/${SingleRoutePart<T>}`;
+  type DynamicRoutes<T extends string> = `/products/${SingleRoutePart<T>}`;
   // prettier-ignore
-  type DynamicRouteTemplate = `/category/[name]` | `/products/[id]`;
+  type DynamicRouteTemplate = `/products/[id]`;
 
   type RelativePathString = `./${string}` | `../${string}` | '..';
   type AbsoluteRoute = DynamicRouteTemplate | StaticRoutes;
