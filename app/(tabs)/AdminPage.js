@@ -20,12 +20,19 @@ const AdminPage = () => {
     router.replace("deleteItem");
   };
 
+  const navigateToAddCategory = () => {
+    router.replace("addcat");
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Admin Dashboard</Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={navigateToAddItem}>
           <Text style={styles.buttonText}>Add Item</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={navigateToAddCategory}>
+          <Text style={styles.buttonText}>Add Category</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={navigateToOrders}>
           <Text style={styles.buttonText}>Orders</Text>

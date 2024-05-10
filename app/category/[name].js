@@ -106,7 +106,6 @@ export default function Category() {
 
 const styles = StyleSheet.create({
   container: {
-   
     backgroundColor: Colors.light.whiteBackground,
     alignItems: "center",
   },
