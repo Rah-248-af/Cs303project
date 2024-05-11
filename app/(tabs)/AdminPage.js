@@ -20,8 +20,8 @@ const AdminPage = () => {
     router.replace("deleteItem");
   };
 
-  const navigateToAddCategory = () => {
-    router.replace("addcat");
+  const navigateToUpdateProduct = () => {
+    router.replace("updateProduct");
   };
 
   return (
@@ -33,6 +33,9 @@ const AdminPage = () => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={navigateToOrders}>
           <Text style={styles.buttonText}>Orders</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={navigateToUpdateProduct}>
+          <Text style={styles.buttonText}>Update Products</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
