@@ -5,15 +5,15 @@ const thirdColor = "#d2d2d2";
 export default {
   main: {
     text: "#000",
-    backgroundcolor: "#E6E6E6",
-    // blue : #3D6CF3
+    backgroundcolor: "#FFFFFF",
+    // blue : #0D47A1
     tint: mainColor,
     tabIconDefault: "#ccc",
     tabIconSelected: mainColor,
   },
   light: {
     text: "#fff",
-    backgroundcolor: "#3E68B2",
+    backgroundcolor: "#134EAA",
     // light : #E6E6E6
     whiteBackground: "#E9E9E9",
     secondBackground: "#fff",

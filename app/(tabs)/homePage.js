@@ -287,7 +287,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: Colors.light.backgroundcolor,
+    backgroundColor: "#FFFFFF",
   },
   bannerImage: {
     width: "100%",
@@ -296,7 +296,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   ProfileView: {
-    backgroundColor: Colors.dark.backgroundcolor,
+    backgroundColor: Colors.main.backgroundcolor,
     padding: 10,
     height: 70,
     width: 70,

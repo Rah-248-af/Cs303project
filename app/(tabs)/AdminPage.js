@@ -31,9 +31,6 @@ const AdminPage = () => {
         <TouchableOpacity style={styles.button} onPress={navigateToAddItem}>
           <Text style={styles.buttonText}>Add Item</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={navigateToAddCategory}>
-          <Text style={styles.buttonText}>Add Category</Text>
-        </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={navigateToOrders}>
           <Text style={styles.buttonText}>Orders</Text>
         </TouchableOpacity>

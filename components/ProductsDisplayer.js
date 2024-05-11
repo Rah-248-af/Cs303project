@@ -174,13 +174,11 @@ const styles = StyleSheet.create({
   },
   ProductsList: {
     marginTop: 0,
-    maxHeight: 1100,
     minHeight: 1100,
     alignSelf: "flex-start",
   },
   ProductItem: {
     minHeight: 250,
-    maxHeight: 250,
     borderRadius: 20,
     flexDirection: "column",
     justifyContent: "space-between",
